@@ -108,3 +108,5 @@ dist
 
 # Build
 build/
+
+.idea/
