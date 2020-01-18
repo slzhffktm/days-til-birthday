@@ -7,7 +7,7 @@
     "test": "mocha test/**/* --require @babel/register --require ts-node/register",
     "tsc": "tsc",
     "dev": "ts-node-dev --respawn --transpileOnly ./src/app.ts",
-    "prod": "tsc && node ./build/app.js"
+    "prod": "tsc && node ./build/src/app.js"
   },
   "author": "",
   "license": "ISC",
