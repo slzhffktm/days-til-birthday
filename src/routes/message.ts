@@ -27,8 +27,6 @@ router.get('/:user_id/:message_id', function(req, res) {
     })
 })
 
-export default router
-
 // Delete one message by user id and message id
 router.delete('/:user_id/:message_id', function(req, res) {
 
@@ -38,3 +36,5 @@ router.delete('/:user_id/:message_id', function(req, res) {
         res.sendStatus(404)
     })
 })
+
+export default router
