@@ -90,3 +90,34 @@ async function countDaysUntilBirthday(user_id: string) {
 
     return Math.ceil(n_days)
 }
+
+// Gets all messages with format {user_id: messages}
+export async function getAllMessages() {
+
+    let rawMessages = await messageModel.getAllMessages()
+    let messages = {}
+
+    for (const [user_id, user_messages] of Object.entries(rawMessages)) {
+        // @ts-ignore
+        messages[user_id] = user_messages['messages']
+    }
+
+    return messages
+}
+
+// Gets one message by user id and message id
+export async function getUserMessageById(user_id: string, message_id: string) {
+
+    return await messageModel.getUserMessageById(user_id, message_id)
+}
+
+// Delete one message by user id and message id
+export async function deleteUserMessageById(user_id: string, message_id: string) {
+    let message =  await messageModel.getUserMessageById(user_id, message_id)
+
+    if (message) {
+        await messageModel.deleteUserMessageById(user_id, message_id)
+    } else { // no message
+        throw Error("Message not found.")
+    }
+}
