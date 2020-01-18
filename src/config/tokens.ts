@@ -1,0 +1,2 @@
+export const VERIFY_TOKEN = "qwertyuiopasdfghjklzxcvbnm"
+export const ACCESS_TOKEN = "EAAwFm5CfygYBAJRrL7fRXtUv30dQH796VdNURgZCpbnime2u5i7QJgTtMOIyj7Y5AZBkVXjdlR7dl0nZCufEpogZBGD0XjwKX4y9R5ah6wzWEzIfumXxFYi0qgz21IxjvKMXZBtU14q0TlKtlhN34WErpbyibYZCPrDIf6ckXu8wZDZD"

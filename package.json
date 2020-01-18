@@ -1,0 +1,24 @@
+{
+  "name": "messengerbot",
+  "version": "1.0.0",
+  "description": "A chat bot for Messenger.",
+  "main": "src/app.ts",
+  "scripts": {
+    "test": "mocha",
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/app.ts",
+    "prod": "tsc && node ./build/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "@types/request": "^2.48.4",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.9.1",
+    "request": "^2.88.0",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.4"
+  }
+}
