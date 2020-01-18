@@ -56,8 +56,6 @@ router.post('/', function(req, res) {
                 handleMessage(sender_psid, webhook_event.message).catch(function (error) {
                     console.log(error)
                 })
-            } else if (webhook_event.postback) {
-                handlePostback(sender_psid, webhook_event.postback);
             }
         });
 
@@ -85,11 +83,6 @@ async function handleMessage(sender_psid: string, received_message: any) {
 
     // Sends the response message
     callSendAPI(sender_psid, response);
-}
-
-// Handles messaging_postbacks events
-function handlePostback(sender_psid: string, received_postback: any) {
-
 }
 
 // Sends response messages via the Send API
