@@ -2,6 +2,8 @@
 
 A Messenger Bot for counting how many days left until your next birthday.
 
+![demo](media/demo.gif)
+
 ## Setup
 
 Before running, you need to install all dependency. To install all dependency, run:
